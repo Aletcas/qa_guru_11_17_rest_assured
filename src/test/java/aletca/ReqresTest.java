@@ -9,21 +9,6 @@ import static org.hamcrest.CoreMatchers.is;
 public class ReqresTest {
 
     @Test
-    void successfulLogin() {
-
-        String data = "{\"email\": \"eve.holt@reqres.in\", " +
-                "\"password\": \"cityslicka\"}";
-        given()
-                .contentType(JSON)
-                .body(data)
-                .when()
-                .post("https://reqres.in/api/login")
-                .then()
-                .statusCode(200)
-                .body("token", is("QpwL5tke4Pnpja7X4"));
-    }
-
-    @Test
     void negativLogin() {
 
         String data = "{\"email\": \"eve.holt@reqres.in\"}";
