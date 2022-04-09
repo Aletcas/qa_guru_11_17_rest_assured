@@ -37,7 +37,7 @@ public class ReqresTest {
     }
 
     @Test
-    void postCreate201Error() {
+    void postCreateStatus201() {
 
         String data = "{ \"name\": \"morpheus\", " +
                 "\"job\": \"leader\" }";
